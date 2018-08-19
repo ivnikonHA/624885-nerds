@@ -28,7 +28,59 @@
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтры</h2>
-        <!-- Здесь будет форма. -->
+        <form action="http://echo.htmlacademy.ru" class="filter-form" method="post">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input class="filter-form-price-range" type="range" name="price-range" value="">
+            <label for="price-min">От</label>
+            <input type="text" class="filter-form-price-min" id="price-min" name="price-min" value="0">
+            <label for="price-max">До</label>
+            <input type="text" class="filter-form-price-max" id="price-max" name="price-max" value="15000">
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-radio" type="radio" id="layout-adaptive" name="layout" value="adaptive" checked>
+                <label for="layout-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-radio" type="radio" id="layout-fixed" name="layout" value="fixed">
+                <label for="layout-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-radio" type="radio" id="layout-rubber" name="layout" value="rubber">
+                <label for="layout-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="filter-features" name="features">
+                <label for="filter-features">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="filter-news" name="news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="filter-gallery" name="gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" id="filter-cart" name="cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button-submit" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -106,6 +158,7 @@
 
     <footer class="main-footer">
       <section class="address">
+        <img src="img/map.png" width="1440" height="416" alt="Карта с расположением офиса">
         <h2 class="address-title">Nerds design studio</h2>
         <p class="address-text">191186,Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
         <p class="address-phone">тел. +7(812)275-75-75</p>
@@ -114,15 +167,24 @@
       <p class="footer-social">
         <span>Давайте дружить, это выгодно!</span>
         <span>Скидка 10% для друзей из социальных сетей.</span>
-        <a class="footer-social-item" href="https://vk.com/"></a>
-        <a class="footer-social-item" href="https://facebook.com/"></a>
-        <a class="footer-social-item" href="https://instagram.com/"></a>
+        <a class="footer-social-item" href="https://vk.com/">ВКонтакте</a>
+        <a class="footer-social-item" href="https://facebook.com/">Facebook</a>
+        <a class="footer-social-item" href="https://instagram.com/">Instagram</a>
       </p>
     </footer>
 
     <section class="modal modal-write-us">
       <h2 class="write-us-title">Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
+        <label for="write-us-name">Ваше имя:</label>
+        <input type="text" id="write-us-name" name="name" value="" placeholder="Имя Фамилия">
+        <label for="write-us-email">Ваш e-mail:</label>
+        <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
+        <label for="write-us-text">Текст письма:</label>
+        <textarea id="write-us-text" name="text" value="" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close">Закрыть</button>
     </section>
 
   </body>
