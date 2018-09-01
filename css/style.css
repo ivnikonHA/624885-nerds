@@ -41,6 +41,8 @@ a {
   color: #fb565a;
 }
 
+/*----- Section Slider -----*/
+
 .slider {
   color: #000000;
 
@@ -86,4 +88,128 @@ a {
 .slider-button:hover,
 .slider-button:focus {
   background-color: #e74246;
+}
+
+.slider-controls {
+  list-style: none;
+}
+
+/*----- End of Section Slider -----*/
+
+/*----- Section Advantages -----*/
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.advantages-item:nth-child(1) a {
+  background-color: #fb565a;
+}
+
+.advantages-item:nth-child(1) a:hover,
+.advantages-item:nth-child(1) a:focus {
+  background-color: #e74246;
+}
+
+.advantages-item:nth-child(2) a {
+  background-color: #00ca74;
+}
+
+.advantages-item:nth-child(2) a:hover,
+.advantages-item:nth-child(2) a:focus {
+  background-color: #00bc6c;
+}
+
+.advantages-item:nth-child(3) a {
+  background-color: #efc84a;
+}
+
+.advantages-item:nth-child(3) a:hover,
+.advantages-item:nth-child(3) a:focus {
+  background-color: #eab534;
+}
+
+/*----- End of Section Advantages -----*/
+
+/*----- Section About -----*/
+
+.about {
+  background-color: #ffffff;
+  background-image: url("../img/nerds-illustration.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-list-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-table-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-table td {
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.about-table th {
+  font-size: 16px;
+  font-weight: 400;
+  color: #283136;
+}
+
+/*----- End of Section About -----*/
+
+/*----- Section Clients -----*/
+
+.clients-list {
+  list-style: none;
+}
+
+/*----- End of Section Clients -----*/
+
+/*----- Footer -----*/
+
+.addrress-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
