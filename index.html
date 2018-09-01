@@ -11,25 +11,29 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo">
-        </a>
-        <ul class="main-menu">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="top-header container">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo">
+          </a>
+          <ul class="main-menu">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="cart">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
       </nav>
-      <ul class="cart">
-        <li><a href="#">Корзина</a></li>
-      </ul>
+
     </header>
 
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Студия Нёрдс.</h1>
 
       <section class="slider">
+        <div class="container">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider-list">
           <li>
@@ -54,14 +58,15 @@
             <a href="#" class="button slider-button">Узнать больше</a>
           </li>
         </ul>
-        <ul class="slider-controls">
+        <ul class="slider-controls visually-hidden">
           <li><button>Первый слайд</button></li>
           <li><button>Второй слайд</button></li>
           <li><button>Третий слайд</button></li>
         </ul>
+        </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Предложения</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -85,33 +90,41 @@
         </ul>
       </section>
 
-      <section class="about">
-        <h2 class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p class="about-text">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <h3 class="about-list-title">Выполняем заказы на разработку:</h3>
-        <ul class="about-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <h3 class="about-table-title">С 2004 года любим точность во всём:</h3>
-        <table class="about-table">
-          <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
-          </tr>
-          <tr>
-            <th>Уровень самоотдачи</th>
-            <th>Соблюдение сроков</th>
-            <th>Минимальная предоплата</th>
-          </tr>
-        </table>
+      <section class="about container">
+        <div class="about-main-column">
+          <h2 class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p class="about-text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+        </div>
+        <div class="about-wraper">
+          <div class="about-list-column">
+            <h3 class="about-list-title">Выполняем заказы на разработку:</h3>
+            <ul class="about-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-table-column">
+            <h3 class="about-table-title">С 2004 года любим точность во всём:</h3>
+            <table class="about-table">
+              <tr>
+                <td>146%</td>
+                <td>100%</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <th>Уровень самоотдачи</th>
+                <th>Соблюдение сроков</th>
+                <th>Минимальная предоплата</th>
+              </tr>
+            </table>
+          </div>
+        </div>
       </section>
 
-      <section class="clients">
+      <section class="clients container">
         <h2 class="visually-hidden">Клиенты</h2>
         <ul class="clients-list">
           <li>
@@ -147,13 +160,17 @@
         <p class="address-phone">тел. +7(812)275-75-75</p>
         <a href="#" class="button address-button">Напишите нам</a>
       </section>
-      <p class="footer-social">
-        <span class="footer-social-title">Давайте дружить, это выгодно!</span>
-        <span class="footer-social-text">Скидка 10% для друзей из социальных сетей.</span>
-        <a class="footer-social-item" href="https://vk.com/">ВКонтакте</a>
-        <a class="footer-social-item" href="https://facebook.com/">Facebook</a>
-        <a class="footer-social-item" href="https://instagram.com/">Instagram</a>
-      </p>
+      <section class="footer-social container">
+        <div class="footer-icon-column">
+          <a class="footer-social-item" href="https://vk.com/">ВКонтакте</a>
+          <a class="footer-social-item" href="https://facebook.com/">Facebook</a>
+          <a class="footer-social-item" href="https://instagram.com/">Instagram</a>
+        </div>
+        <div class="footer-text-column">
+          <span class="footer-social-title">Давайте дружить, это выгодно!</span>
+          <span class="footer-social-text">Скидка 10% для друзей из социальных сетей.</span>
+        </div>
+      </section>
     </footer>
 
     <section class="modal modal-write-us">

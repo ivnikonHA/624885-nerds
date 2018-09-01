@@ -30,13 +30,42 @@ a {
   border: none;
 }
 
-.main-navigation,
-.cart {
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 
   background-color: #eeeeee;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .main-menu,
@@ -59,12 +88,16 @@ a {
 /*----- Section Slider -----*/
 
 .slider {
+  margin-bottom: 76px;
+
   color: #000000;
 
   background-color: #eeeeee;
 }
 
 .slider-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -87,18 +120,12 @@ a {
 }
 
 .slider-title {
+  margin: 0;
+  padding: 0;
+
   font-size: 55px;
   line-height: 55px;
 }
-
-/*.slider-button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-
-  background-color: #fb565a;
-}*/
 
 .slider-button:hover,
 .slider-button:focus {
@@ -114,7 +141,16 @@ a {
 /*----- Section Advantages -----*/
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.advatanges-item {
+  width: 300px;
 }
 
 .advantages-title {
@@ -124,18 +160,6 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
-
-/*.advantages-item a {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-}*/
-
-/*.advantages-item:nth-child(1) a {
-  background-color: #fb565a;
-}*/
 
 .advantages-item:nth-child(1) a:hover,
 .advantages-item:nth-child(1) a:focus {
@@ -169,6 +193,24 @@ a {
   background-image: url("../img/nerds-illustration.png");
   background-position: top right;
   background-repeat: no-repeat;
+}
+
+.about-main-column {
+  margin-bottom: 40px;
+  width: 660px;
+}
+
+.about-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list-column {
+  width: 460px;
+}
+
+.about-table-column {
+  width: 360px;
 }
 
 .about-title {
@@ -215,6 +257,11 @@ a {
 /*----- Section Clients -----*/
 
 .clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -223,6 +270,12 @@ a {
 /*----- Footer -----*/
 
 /*----- Section Address -----*/
+
+.address img {
+  display: block;
+  width: 1440px;
+  margin: 0 auto;
+}
 
 .addrress-title {
   font-size: 18px;
@@ -254,6 +307,19 @@ a {
 }
 
 /*----- End of Section Address -----*/
+
+.footer-social {
+  display: flex;
+}
+
+.footer-icon-column {
+  width: 260px;
+}
+
+.footer-text-column {
+  margin-left: 140px;
+  width: 560px;
+}
 
 .footer-social-title {
   font-size: 36px;
