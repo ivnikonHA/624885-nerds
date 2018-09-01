@@ -34,7 +34,7 @@
         <form action="http://echo.htmlacademy.ru" class="filter-form" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input class="filter-form-price-range" type="range" name="price-range" value="">
+            <input class="filter-form-price-range" type="range" name="price-range" value="0.0">
             <label for="price-min">От</label>
             <input type="text" class="filter-form-price-min" id="price-min" name="price-min" value="0">
             <label for="price-max">До</label>
@@ -99,61 +99,61 @@
         <ul class="catalog-list">
           <li>
             <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">Sedona</h3>
-              <span class="catalog-item-description">Информационный сайт для туристов</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Информационный сайт для туристов</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
           <li>
             <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">Pink App</h3>
-              <span class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
           <li>
             <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">Barbershop</h3>
-              <span class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
           <li>
             <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">Mishka</h3>
-              <span class="catalog-item-description">Интернет-магазин вязаных игрушек</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
           <li>
             <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">A Plus</h3>
-              <span class="catalog-item-description">Лендинг курсов повышения квалификации</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
           <li>
             <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст"></a>
-            <p class="visually-hidden">
+            <div class="visually-hidden catalog-item">
               <h3 class="catalog-item-title">Кваст</h3>
-              <span class="catalog-item-description">Промо-сайт производителя крафтового кваса</span>
-              <span class="catalog-item-price">9900 руб.</span>
-            </p>
+              <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+              <p class="button catalog-item-price">9900 руб.</p>
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-item-current"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li class="pagination-item-next"><a href="#">Следующая</a></li>
+          <li class="pagination-item-current pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item-next pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
 
@@ -165,11 +165,11 @@
         <h2 class="address-title">Nerds design studio</h2>
         <p class="address-text">191186,Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
         <p class="address-phone">тел. +7(812)275-75-75</p>
-        <a href="#" class="address-button">Напишите нам</a>
+        <a href="#" class="button address-button">Напишите нам</a>
       </section>
       <p class="footer-social">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
+        <span class="footer-social-title">Давайте дружить, это выгодно!</span>
+        <span class="footer-social-text">Скидка 10% для друзей из социальных сетей.</span>
         <a class="footer-social-item" href="https://vk.com/">ВКонтакте</a>
         <a class="footer-social-item" href="https://facebook.com/">Facebook</a>
         <a class="footer-social-item" href="https://instagram.com/">Instagram</a>
@@ -184,7 +184,7 @@
         <label for="write-us-email">Ваш e-mail:</label>
         <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
         <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="text" value="" placeholder="В свободной форме"></textarea>
+        <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close">Закрыть</button>

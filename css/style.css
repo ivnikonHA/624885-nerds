@@ -300,3 +300,129 @@ a {
 .write-us-button:hover {
   background-color: #e74246;
 }
+
+/*----- End of Modal Window -----*/
+
+/*----- Catalog Page -----*/
+
+.catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  text-align: center;
+}
+
+/*----- Section Filter -----*/
+
+.filter-form legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-min,
+.price-max {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-form ul {
+  list-style: none;
+}
+
+.filter-option label {
+  line-height: 20px;
+}
+
+.button-submit {
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.button-submit:hover {
+  background-color: #dfdfdf;
+}
+
+/*----- End of Section Filter -----*/
+
+/*----- Section Catalog -----*/
+
+.catalog-sort-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort-by {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.3);
+}
+
+.sort-by:hover,
+.sort-by:focus {
+  color: rgba(0,0,0,0.6);
+}
+
+.active-sort-by,
+.sort-by:active {
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list li {
+  background-color: #eeeeee;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-item-description {
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+/*----- End of Section Catalog -----*/
+
+/*----- Section Pagination -----*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+}
+
+/*----- End of Section Pagination -----*/
