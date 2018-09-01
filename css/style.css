@@ -15,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
 .main-navigation,
 .cart {
   font-size: 16px;
@@ -76,14 +91,14 @@ a {
   line-height: 55px;
 }
 
-.slider-button {
+/*.slider-button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
 
   background-color: #fb565a;
-}
+}*/
 
 .slider-button:hover,
 .slider-button:focus {
@@ -110,17 +125,17 @@ a {
   text-transform: uppercase;
 }
 
-.advantages-item a {
+/*.advantages-item a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
-}
+}*/
 
-.advantages-item:nth-child(1) a {
+/*.advantages-item:nth-child(1) a {
   background-color: #fb565a;
-}
+}*/
 
 .advantages-item:nth-child(1) a:hover,
 .advantages-item:nth-child(1) a:focus {
@@ -207,9 +222,81 @@ a {
 
 /*----- Footer -----*/
 
+/*----- Section Address -----*/
+
 .addrress-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.address-text,
+.address-phone {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+/*.address-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}*/
+
+.address-button:hover {
+  background-color: #e74246;
+}
+
+/*----- End of Section Address -----*/
+
+.footer-social-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+/*----- End of Footer -----*/
+
+/*----- Modal Window -----*/
+
+.write-us-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.write-us-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/*.write-us-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}*/
+
+.write-us-button:hover {
+  background-color: #e74246;
 }
