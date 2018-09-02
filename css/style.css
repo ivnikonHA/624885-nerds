@@ -376,9 +376,20 @@ input[type="radio"].visually-hidden {
   line-height: 55px;
   color: #000000;
   text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.main-catalog-column {
+  display: flex;
 }
 
 /*----- Section Filter -----*/
+
+.filter {
+  width: 260px;
+  margin-right: 140px;
+}
 
 .filter-form legend {
   font-size: 18px;
@@ -419,6 +430,10 @@ input[type="radio"].visually-hidden {
 
 /*----- Section Catalog -----*/
 
+.catalog {
+  flex-grow: 1;
+}
+
 .catalog-sort-title {
   font-size: 18px;
   line-height: 18px;
@@ -445,6 +460,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
