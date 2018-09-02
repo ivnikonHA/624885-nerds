@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-.button {
+/*.button {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -28,6 +28,35 @@ a {
 
   background-color: #fb565a;
   border: none;
+}*/
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 16px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .container {
@@ -57,21 +86,81 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
+  font-weight: 500;
   color: #000000;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
 }
 
 .top-header {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 0;
+  padding-top: 49px;
 }
 
-.main-menu,
-.cart{
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-menu {
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  margin-left: 200px;
   list-style: none;
 }
+
+.cart {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  max-width: 160px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.cart a {
+  position: relative;
+  padding-left: 50px;
+}
+
+.cart a::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*.main-menu,
+.cart{
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  list-style: none;
+}*/
 
 .main-menu a,
 .cart a {
@@ -85,9 +174,16 @@ input[type="radio"].visually-hidden {
   color: #fb565a;
 }
 
+.main-menu a:active,
+.cart a:active {
+  color: rgba(0,0,0,0.3);
+}
+
 /*----- Section Slider -----*/
 
 .slider {
+  position: relative;
+
   margin-bottom: 76px;
 
   color: #000000;
@@ -101,30 +197,46 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.slider-list li {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-list li:nth-child(1) {
+  display: block;
+}
+
 .slider-list li:nth-child(1) {
   background-image: url("../img/slide1.png");
-  background-position: top center;
+  background-position: 93% 18px;
   background-repeat: no-repeat;
 }
 
 .slider-list li:nth-child(2) {
   background-image: url("../img/slide2.png");
-  background-position: top center;
+  background-position: 100% 0;
   background-repeat: no-repeat;
 }
 
 .slider-list li:nth-child(3) {
   background-image: url("../img/slide3.png");
-  background-position: top center;
+  background-position: 100% 20px;
   background-repeat: no-repeat;
 }
 
 .slider-title {
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
 
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-description {
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .slider-button:hover,
@@ -133,7 +245,62 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controls {
-  list-style: none;
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 /*----- End of Section Slider -----*/
