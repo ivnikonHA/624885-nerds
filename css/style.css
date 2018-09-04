@@ -65,6 +65,14 @@ a {
   padding: 0 20px;
 }
 
+.hr-line {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+  height: 2px;
+  border: none;
+  background-color: #eeeeee;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -307,6 +315,10 @@ input[type="radio"].visually-hidden {
 
 /*----- Section Advantages -----*/
 
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
@@ -320,12 +332,24 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
+.advantages-item:last-child {
+  padding-right: 60px;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-item-description {
+  margin-bottom: 30px;
+}
+
+.advantages-button {
+  width: 160px;
 }
 
 .advantages-item:nth-child(1) a:hover,
@@ -356,14 +380,17 @@ input[type="radio"].visually-hidden {
 /*----- Section About -----*/
 
 .about {
+  margin-top: 36px;
+  margin-bottom: 40px;
   background-color: #ffffff;
   background-image: url("../img/nerds-illustration.png");
-  background-position: top right;
+  background-position: 97% 4px;
   background-repeat: no-repeat;
 }
 
 .about-main-column {
-  margin-bottom: 40px;
+  padding-top: 40px;
+  margin-bottom: 50px;
   width: 660px;
 }
 
@@ -381,13 +408,23 @@ input[type="radio"].visually-hidden {
 }
 
 .about-title {
+  margin: 0;
+  padding: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
+.about-text {
+  margin:0;
+  padding: 0;
+  padding-top: 30px;
+}
+
 .about-list-title {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -396,10 +433,36 @@ input[type="radio"].visually-hidden {
 }
 
 .about-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
   list-style: none;
+
+}
+
+.about-list li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+  padding-bottom: 24px;
+}
+
+.about-list li::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .about-table-title {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -407,21 +470,45 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.about-table {
+  margin-top: 47px;
+}
+
 .about-table td {
+  position: relative;
   font-size: 45px;
   font-weight: 700;
   color: #000000;
+  padding-bottom: 27px;
+  width: 120px;
+  text-align: left;
 }
 
 .about-table th {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   color: #283136;
+  text-align: left;
+}
+
+.percent {
+  /*position: absolute;
+  top: -6px;
+  left: 73px;*/
+
+  font-size: 26px;
+
 }
 
 /*----- End of Section About -----*/
 
 /*----- Section Clients -----*/
+
+.clients {
+  margin-top: 45px;
+  margin-bottom: 37px;
+}
 
 .clients-list {
   display: flex;
@@ -432,11 +519,66 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.clients-item {
+  position: relative;
+  opacity: 0.2;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  opacity: 1;
+}
+
+.clients-item:active {
+  opacity: 0.1;
+}
+
+.clients-list li {
+  position: relative;
+}
+
+.clients-list li::after {
+  content: "";
+
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: -20px;
+  z-index: 100;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
+.clients-list li:last-of-type::after {
+  display: none;
+}
+
+
 /*----- End of Section Clients -----*/
 
 /*----- Footer -----*/
 
+.main-footer {
+  margin-top: 80px;
+}
+
 /*----- Section Address -----*/
+.address {
+  position: relative;
+}
+
+.map-marker {
+  position: absolute;
+  top: 89px;
+  left: 1151px;
+  width: 231px;
+  height: 190px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  /*background-position: 300px 100px;*/
+}
 
 .address img {
   display: block;
@@ -444,30 +586,49 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.addrress-title {
+.address-block {
+  position: absolute;
+  top: 55px;
+  left: 370px;
+  width: 270px;
+  padding-left: 50px;
+  background-color: #ffffff;
+}
+
+.address-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .address-text,
 .address-phone {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
 }
 
-/*.address-button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
+.address-text {
+    padding-top: 24px;
+}
 
-  background-color: #fb565a;
-}*/
+.address-phone {
+  padding-top: 18px;
+  padding-bottom: 36px;
+}
+
+.address-button {
+  margin-bottom: 47px;
+  width: 219px;
+}
 
 .address-button:hover {
   background-color: #e74246;
