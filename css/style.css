@@ -381,7 +381,7 @@ input[type="radio"].visually-hidden {
 
 .about {
   margin-top: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   background-color: #ffffff;
   background-image: url("../img/nerds-illustration.png");
   background-position: 97% 4px;
@@ -390,7 +390,7 @@ input[type="radio"].visually-hidden {
 
 .about-main-column {
   padding-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 660px;
 }
 
@@ -567,12 +567,13 @@ input[type="radio"].visually-hidden {
 /*----- Section Address -----*/
 .address {
   position: relative;
+  margin-bottom: 70px;
 }
 
 .map-marker {
   position: absolute;
   top: 89px;
-  left: 1151px;
+  left: 1052px;
   width: 231px;
   height: 190px;
   background-image: url("../img/map-marker.png");
@@ -638,14 +639,44 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .footer-icon-column {
+  display: flex;
+  justify-content: space-between;
   width: 260px;
+}
+
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+
+  background-color: #e1e1e1;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: #e74246;
+}
+
+.footer-social-item:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+
+}
+
+.footer-social-item:active path {
+  fill: rgba(255,255,255,0.3);
 }
 
 .footer-text-column {
   margin-left: 140px;
+  padding-top: 5px;
   width: 560px;
 }
 
@@ -658,7 +689,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social-text {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 38px;
   color: #444444;
 }
 
