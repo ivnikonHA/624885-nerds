@@ -205,19 +205,45 @@
       </section>
     </footer>
 
-    <section class="modal modal-write-us visually-hidden">
+    <section class="modal-write-us">
       <h2 class="write-us-title">Напишите нам</h2>
       <form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" id="write-us-name" name="name" value="" placeholder="Имя Фамилия">
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
-        <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
-        <button class="button write-us-button" type="submit">Отправить</button>
+        <div class="name-email">
+          <label class="write-us-name-label">
+            Ваше имя:<br>
+            <input type="text" id="write-us-name" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+
+          <label for="write-us-email">
+            Ваш e-mail:<br>
+            <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
+          </label>
+        </div>
+
+        <label for="write-us-text">
+          Текст письма:<br>
+          <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="button modal-button" type="submit">Отправить</button>
       </form>
       <button class="modal-close">Закрыть</button>
     </section>
 
+    <script>
+      var link = document.querySelector(".address-button");
+
+      var popup = document.querySelector(".modal-write-us");
+      var close = popup.querySelector(".modal-close");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>

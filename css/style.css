@@ -1250,6 +1250,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 20px 40px rgba(0,0,0,0.75);
 }
 
+.modal-show {
+  display: block;
+}
+
 .write-us-title {
   margin: 0;
   padding: 0;
@@ -1311,6 +1315,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 /*----- End of Section Modal -----*/
