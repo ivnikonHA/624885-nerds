@@ -105,75 +105,78 @@
               <a href="#" class="sort-by active-sort-by">По цене</a>
               <a href="#" class="sort-by">По типу</a>
               <a href="#" class="sort-by">По названию</a>
-              <a href="#" class="visually-hidden sort-direction active-sort-direction">По возрастанию</a>
-              <a href="#" class="visually-hidden sort-direction">По убыванию</a>
+              <a href="#" class="sort-direction sort-down active-sort-direction">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
+              <a href="#" class="sort-direction sort-up">
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
             </p>
             <ul class="catalog-list">
-              <li>
+              <li class="active-catalog-item">
                 <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">Sedona</h3>
-                  <p class="catalog-item-description">Информационный сайт для туристов</p>
-                  <p class="button catalog-item-price">9900 руб.</p>
+                  <p class="catalog-item-description">Информационный сайт<br> для туристов</p>
+                  <a href="" class="button catalog-item-price">9900 руб.</a>
                 </div>
               </li>
               <li>
                 <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">Pink App</h3>
-                  <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                  <p class="catalog-item-description">Продуктовый лендинг<br> приложения для iOS и Android</p>
                   <p class="button catalog-item-price">9900 руб.</p>
                 </div>
               </li>
               <li>
                 <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">Barbershop</h3>
-                  <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
+                  <p class="catalog-item-description">Сайт салона красоты.<br> Для мужчин, да.</p>
                   <p class="button catalog-item-price">9900 руб.</p>
                 </div>
               </li>
               <li>
                 <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">Mishka</h3>
-                  <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+                  <p class="catalog-item-description">Интернет-магазин<br> вязаных игрушек</p>
                   <p class="button catalog-item-price">9900 руб.</p>
                 </div>
               </li>
               <li>
                 <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">A Plus</h3>
-                  <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+                  <p class="catalog-item-description">Лендинг курсов повышения<br> квалификации</p>
                   <p class="button catalog-item-price">9900 руб.</p>
                 </div>
               </li>
               <li>
                 <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст"></a>
-                <div class="visually-hidden catalog-item">
+                <div class="catalog-item">
                   <h3 class="catalog-item-title">Кваст</h3>
-                  <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+                  <p class="catalog-item-description">Промо-сайт производителя<br> крафтового кваса</p>
                   <p class="button catalog-item-price">9900 руб.</p>
                 </div>
               </li>
             </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item-current pagination-item"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+            </ul>
           </section>
         </div>
 
-        <section class="pagination">
-          <ul class="pagination-list">
-            <li class="pagination-item-current pagination-item"><a href="#">1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item-next pagination-item"><a href="#">Следующая</a></li>
-          </ul>
-        </section>
+
       </div>
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer catalog-footer">
       <section class="address">
         <img src="img/map.png" width="1440" height="416" alt="Карта с расположением офиса">
         <div class="address-block">
@@ -221,16 +224,26 @@
       </section>
     </footer>
 
-    <section class="modal modal-write-us visually-hidden">
+    <section class="modal-write-us">
       <h2 class="write-us-title">Напишите нам</h2>
       <form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" id="write-us-name" name="name" value="" placeholder="Имя Фамилия">
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
-        <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
-        <button class="button" type="submit">Отправить</button>
+        <div class="name-email">
+          <label class="write-us-name-label">
+            Ваше имя:<br>
+            <input type="text" id="write-us-name" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+
+          <label for="write-us-email">
+            Ваш e-mail:<br>
+            <input type="email" id="write-us-email" name="email" value="" placeholder="email@example.com">
+          </label>
+        </div>
+
+        <label for="write-us-text">
+          Текст письма:<br>
+          <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="button modal-button" type="submit">Отправить</button>
       </form>
       <button class="modal-close">Закрыть</button>
     </section>
