@@ -11,6 +11,10 @@ var text = popup.querySelector("textarea");
 var isStorageSupport = true;
 var storage = "";
 
+// var map;
+
+ymaps.ready(init);
+
 try {
   storage = localStorage.getItem("login");
 } catch (err) {
@@ -47,3 +51,19 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+function init() {
+  myMap = new ymaps.Map('map', {
+        center: [59.9391, 30.3214],
+        zoom: 17,
+        controls: []
+    });
+  var myPlacemark = new ymaps.Placemark([59.938709, 30.323081], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/map-marker.png',
+    iconImageSize: [231, 190],
+    iconImageOffset: [-50, -190]
+  });
+  myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable(['drag', 'leftMouseButtonMagnifier', 'rightMouseButtonMagnifier', 'scrollZoom', 'dblClickZoom']);
+}
